@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/exercicioFabriki.css">
+<title>Conta Bancária Web</title>
+</head>
+<body>
+	<h1>Conta Bancária Web</h1>
+	<h2>Dados do dono da Conta Bancária</h2>
+ 	<form method="GET" action="BancoServlet">
+		<div class="grid-container">
+			<div>Nome do Cliente:</div>
+			<div>
+				<input type="text" name="nomeCliente" />
+			</div>
+			<div>
+				<input type="radio" id="tipoClientePessoaFisica" name="tipoCliente"
+					checked="checked" value="pessoaFisica"> Pessoa Física</input>
+			</div>
+			<div></div>
+			<div>
+				<input type="radio" id="tipoClientePessoaJuridica"
+					name="tipoCliente" value="pessoaJuridica"> Pessoa Jurídica</input>
+			</div>
+			<div></div>
+			<div>CPF/CNPJ:</div>
+			<div>
+				<input type="text" name="cpfCnpj" />
+			</div>
+		</div>
+		<h2>Operações disponíveis na Conta Bancária</h2>
+		<div class="grid-container">
+			<div>
+				<input type="radio" id="operacaoRecuperarNomeCliente"
+					name="operacao" checked="checked" value="recuperarNomeCliente">
+				Recuperar nome do cliente.</input>
+			</div>
+			<div></div>
+			<div>
+				<input type="radio" id="operacaoRecuperarCpfCliente" name="operacao"
+					value="recuperarCpfCliente"> Recuperar CPF do cliente.</input>
+			</div>
+			<div></div>
+			<div>
+				<input type="radio" id="operacaoRecuperarCnpjCliente"
+					name="operacao" value="recuperarCnpjCliente"> Recuperar
+				CNPJ do cliente.</input>
+			</div>
+			<div></div>
+			<div>
+				<input type="radio" id="operacaoRecuperarSaldo" name="operacao"
+					value="recuperarSaldo"> Recuperar saldo da conta.</input>
+			</div>
+			<div></div>
+			<div>
+				<input type="radio" id="operacaoDepositarValor" name="operacao"
+					value="depositarValor"> Depositar valor na conta.</input>
+			</div>
+			<div></div>
+			<div>
+				<input type="radio" id="operacaoSacarValor" name="operacao"
+					value="sacarValor"> Sacar valor da conta.</input>
+			</div>
+			<div></div>
+			<div>
+				<input type="radio" id="operacaoDepositarSacarValor" name="operacao"
+					value="depositarSacarValor"> Depositar um valor e em
+				seguida sacar outro valor da conta.</input>
+			</div>
+			<div></div>
+			<div>Valor da operação de depósito (se for o caso):</div>
+			<div>
+				<input type="number" name="valorDeposito" />
+			</div>
+			<div>Valor da operação de saque (se for o caso):</div>
+			<div>
+				<input type="number" name="valorSaque" />
+			</div>
+			<div>
+				<input type="submit" />
+			</div>
+		</div>
+	</form>
+</body>
+</html>

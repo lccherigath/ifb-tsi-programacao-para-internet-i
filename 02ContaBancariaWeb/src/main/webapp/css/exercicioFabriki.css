@@ -1,0 +1,21 @@
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+.celulaTabela {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 35%;
+}
+
+.resposta {
+	color: red;
+}
